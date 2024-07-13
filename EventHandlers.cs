@@ -1,11 +1,5 @@
-﻿using Exiled.Events.EventArgs.Scp096;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Triggering_096
+using Exiled.Events.EventArgs.Scp096;
+namespace Triggering096
 {
     public class EventHandlers
     {
@@ -20,7 +14,7 @@ namespace Triggering_096
         {
             var Ply = ev.Target;
             
-            Ply.ShowHint("¡Has mirado al SCP096!",5);
+            Ply.ShowHint(plugin.Config.HintShown,5);
         }
 
 
